@@ -282,7 +282,7 @@ When working with large datasets, Tableau’s filter function is essential to im
 - In the filter dialog, select only **Good** health status.
 - This filter restricts the visualization to trees in good health only.
 
-
+<img src="" width=400>
 ---
 
 ### 2. Create a Map to Visualize Tree Locations with Filters
@@ -326,7 +326,7 @@ When working with large datasets, Tableau’s filter function is essential to im
 ---
 
 
-
+https://public.tableau.com/views/NYC-census-data-2015/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 
 
