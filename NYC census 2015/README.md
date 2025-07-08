@@ -326,7 +326,7 @@ When working with large datasets, Tableau’s filter function is essential to im
 ---
 
 
-https://public.tableau.com/views/NYC-census-data-2015/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+[Tableau Desktop Public] (https://public.tableau.com/views/NYC-census-data-2015/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 
