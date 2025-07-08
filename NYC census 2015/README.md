@@ -159,8 +159,6 @@ After dropping, Tableau may show an **error**:
 > 🌳 Enjoy your analysis with enhanced tree species information!
 
 
-#### Sums, Counts, and Aggregates
-
 # Understanding Aggregates in Tableau with Tree Census Data
 
 ## Common Aggregates
@@ -172,6 +170,8 @@ After dropping, Tableau may show an **error**:
 | `MEDIAN()`| Finds the median (middle value)     | `MEDIAN(Trunk Diameter) = 9.0 inches`     |
 | `COUNT()` | Counts number of items in a field   | `COUNT(Trunk Diameter) = 683,788 trees`   |
 | `COUNTD()`| Counts distinct/unique items        | `COUNTD(Trunk Diameter) = 146 unique measurements` |
+
+<img src="https://github.com/user-attachments/assets/af357a7c-139d-4379-81e0-812f9fe74b32" width=400>
 
 ---
 
@@ -194,6 +194,10 @@ After dropping, Tableau may show an **error**:
   - Hover over the pill → dropdown arrow → **Measure** → **Average**.
   
 This shows the **average trunk diameter**, giving a better measure of which zip code has bigger trunks on average.
+<img src="https://github.com/user-attachments/assets/a7d4a99b-5fdc-478c-bbd2-9f73bbdb7ee7" width=400>
+
+<b>Tick - SHow Label to display the average values of Trunk diameter</b>
+<img src="https://github.com/user-attachments/assets/c3b9e3af-2c7e-492f-a94a-a058e6a678d0" width=400>
 
 ---
 
@@ -204,6 +208,10 @@ This shows the **average trunk diameter**, giving a better measure of which zip 
   - Click dropdown on Tree ID pill → **Measure** → **Count Distinct**.
 
 This counts distinct trees per zip code, helping verify if sums correspond to tree counts.
+
+<img src="https://github.com/user-attachments/assets/5b5e10ec-474b-4d86-bb0f-efc77100b4b0" width=400><br>
+
+<img src="https://github.com/user-attachments/assets/336e4560-4d0a-4fe3-be05-c179b30ccb85" width=400> <br>
 
 ---
 
@@ -225,6 +233,8 @@ This counts distinct trees per zip code, helping verify if sums correspond to tr
   - Click dropdown on Boroname → **Sort**.
   - Sort by **Field** → Aggregation: **Average** → Order: **Descending**.
 
+<img src="https://github.com/user-attachments/assets/d4e0235e-4cca-4a76-8dc8-1c8830d243e6" width=400>
+
 ---
 
 ## Observations from the Borough Data
@@ -244,8 +254,79 @@ This counts distinct trees per zip code, helping verify if sums correspond to tr
 - Click dropdown on **COUNTD(Tree ID)** pill → **Quick Table Calculation** → **Percent of Total**.
 - Remove and re-add the pill to Label shelf to update labels accordingly.
 
+<img src="https://github.com/user-attachments/assets/ed49a2ba-98e5-4714-a59d-e23d4f9368be" width=400>
+
 ---
+
+# Filtering in Tableau: Improving Performance and User Experience
+
+When working with large datasets, Tableau’s filter function is essential to improve performance, reduce wait times, and focus on relevant data. Filtering also helps remove null values or extraneous data points.
+
+---
+
+## Why Use Filters?
+
+- Avoid the "rainbow spinning wheel of death" caused by heavy data processing.
+- Improve dashboard performance by reducing the number of marks Tableau redraws when interacting with visualizations.
+- Filter before plotting individual data points (e.g., in maps or scatterplots) to speed up rendering.
+
+---
+
+## Step-by-Step Filtering Example
+
+### 1. Filter the "Count D" Visualization
+
+- Open your Tableau workbook and find the **“Count D”** visualization.
+- This chart shows the distinct count of Tree ID (`CNTD(TreeID)`) by **Boroname** (borough).
+- Drag the **Health** field to the **Filters Shelf**.
+- In the filter dialog, select only **Good** health status.
+- This filter restricts the visualization to trees in good health only.
 
 
 ---
+
+### 2. Create a Map to Visualize Tree Locations with Filters
+
+- Open a new worksheet and name it **“Tree Locations”**.
+- Double-click **Longitude** (goes to Columns shelf) and **Latitude** (goes to Rows shelf).
+- Tableau will plot a single point representing the average location of all trees.
+- To show each tree as a separate point:
+  - Drag **Tree ID** to the **Detail** shelf.
+  - When prompted, choose **Add all members** (this may take some time).
+
+---
+
+### 3. Improve Map Performance with Filters
+
+- Before adding Tree ID to Detail, filter data to reduce marks:
+  - Drag **Boroname** to the **Filters Shelf**.
+  - Select only one borough, e.g., **Bronx**.
+- This reduces the number of data points from ~700,000 to ~85,000, speeding up map rendering.
+- Now add **Tree ID** to the Detail shelf.
+- Drag **Health** to the **Color** shelf to color-code tree health status.
+
+---
+
+### 4. Make the Map More Readable
+
+- In the **Marks** card, click **Size**.
+- Drag the size slider all the way to the left to reduce point size.
+- Smaller points make the map clearer and help reveal minority data points that might be hidden under larger points.
+
+---
+
+### 5. Additional Performance Tips
+
+- If performance is still slow, filter by specific **Zip Codes** (instead of the whole borough) to reduce data points further.
+- To allow dashboard users to change filters dynamically:
+  - Click the dropdown arrow on the **Boroname** pill in the Filters shelf.
+  - Select **Show Filter**.
+  - This adds a filter control (checkbox list) to the view, enabling user interaction.
+
+---
+
+
+
+
+
 
