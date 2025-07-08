@@ -1,0 +1,33 @@
+	tree_id	tree_dbh	stump_diam	status	health	spc_latin	spc_common	address	zipcode	borocode	boroname	nta_name	state	Latitude	longitude
+0	180683	3	0	Alive	Fair	Acer rubrum	red maple	108-005 70 AVENUE	11375	4	Queens	Forest Hills	New York	40.72309177	-73.84421522
+1	200540	21	0	Alive	Fair	Quercus palustris	pin oak	147-074 7 AVENUE	11357	4	Queens	Whitestone	New York	40.79411067	-73.81867946
+2	204026	3	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	390 MORGAN AVENUE	11211	3	Brooklyn	East Williamsburg	New York	40.71758074	-73.9366077
+3	204337	10	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	1027 GRAND STREET	11211	3	Brooklyn	East Williamsburg	New York	40.71353749	-73.93445616
+4	189565	21	0	Alive	Good	Tilia americana	American linden	603 6 STREET	11215	3	Brooklyn	Park Slope-Gowanus	New York	40.66677776	-73.97597938
+5	190422	11	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	8 COLUMBUS AVENUE	10023	1	Manhattan	Lincoln Square	New York	40.77004563	-73.98494997
+6	190426	11	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	120 WEST 60 STREET	10023	1	Manhattan	Lincoln Square	New York	40.77020969	-73.98533807
+7	208649	9	0	Alive	Good	Tilia americana	American linden	311 WEST 50 STREET	10019	1	Manhattan	Clinton	New York	40.76272385	-73.98729652
+8	209610	6	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	65 JEROME AVENUE	10305	5	Staten Island	Grasmere-Arrochar-Ft. Wadsworth	New York	40.59657931	-74.07625483
+9	192755	21	0	Alive	Fair	Platanus x acerifolia	London planetree	638 AVENUE Z	11223	3	Brooklyn	Gravesend	New York	40.58635725	-73.96974394
+10	203719	11	0	Alive	Good	Platanus x acerifolia	London planetree	20-025 24 STREET	11105	4	Queens	Steinway	New York	40.78242823	-73.91117077
+11	203726	8	0	Alive	Poor	Platanus x acerifolia	London planetree	20-055 24 STREET	11105	4	Queens	Steinway	New York	40.78173511	-73.91201957
+12	195202	13	0	Alive	Fair	Platanus x acerifolia	London planetree	35 FENWAY CIRCLE	10308	5	Staten Island	Great Kills	New York	40.55710259	-74.16267038
+13	189465	22	0	Alive	Good	Platanus x acerifolia	London planetree	100 WAVERLY AVENUE	11205	3	Brooklyn	Clinton Hill	New York	40.69473314	-73.96821054
+14	192998	30	0	Alive	Fair	Platanus x acerifolia	London planetree	2126 UNION STREET	11212	3	Brooklyn	Brownsville	New York	40.6643174	-73.92113023
+15	189834	12	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	449 MYRTLE AVENUE	11205	3	Brooklyn	Clinton Hill	New York	40.69331418	-73.96760066
+16	204208	2	0	Alive	Fair	Ginkgo biloba	ginkgo	8797 25 AVENUE	11214	3	Brooklyn	Bensonhurst East	New York	40.59378755	-73.9915968
+17	161339	14	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	1601 CHURCH AVENUE	11226	3	Brooklyn	Flatbush	New York	40.64878769	-73.96452447
+18	187311	14	0	Alive	Fair	Gleditsia triacanthos var. inermis	honeylocust	55-026 96 STREET	11373	4	Queens	Corona	New York	40.73764622	-73.86529992
+19	208201	10	0	Alive	Good	Ginkgo biloba	ginkgo	206 CARLTON AVENUE	11205	3	Brooklyn	Fort Greene	New York	40.69149917	-73.97258754
+20	193093	11	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	367 PROSPECT AVENUE	11215	3	Brooklyn	Park Slope-Gowanus	New York	40.66123875	-73.98588944
+21	193310	14	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	170 EAST 75 STREET	10021	1	Manhattan	Upper East Side-Carnegie Hill	New York	40.77217148	-73.96045571
+22	199760	4	0	Alive	Fair	Quercus phellos	willow oak	2163 BROADWAY	10024	1	Manhattan	Upper West Side	New York	40.7820872	-73.98096428
+23	204325	9	0	Alive	Good	Acer pseudoplatanus	sycamore maple	301 THOMAS STREET	10306	5	Staten Island	Oakwood-Oakwood Beach	New York	40.56882124	-74.1385634
+24	189700	2	0	Alive	Good	Quercus phellos	willow oak	26 8 AVENUE	11217	3	Brooklyn	Park Slope-Gowanus	New York	40.67483919	-73.97218377
+25	205044	5	0	Alive	Good	Acer ginnala	Amur maple	134 BAY 40 STREET	11214	3	Brooklyn	Bensonhurst East	New York	40.59493629	-73.98917143
+26	192942	33	0	Alive	Good	Platanus x acerifolia	London planetree	84-036 127 STREET	11415	4	Queens	Kew Gardens	New York	40.70653352	-73.82499155
+27	195265	19	0	Alive	Good	Platanus x acerifolia	London planetree	401 AVENUE O	11230	3	Brooklyn	Ocean Parkway South	New York	40.61190461	-73.97042748
+28	201555	9	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	71 STANTON STREET	10002	1	Manhattan	Chinatown	New York	40.72180744	-73.98982976
+29	208407	9	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	1817 DE KALB AVENUE	11385	4	Queens	Ridgewood	New York	40.70804012	-73.91549691
+30	189164	7	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	456 5 AVENUE	11215	3	Brooklyn	Park Slope-Gowanus	New York	40.66882647	-73.98670282
+31	184375	3	0	Alive	Good	Gleditsia triacanthos var. inermis	honeylocust	2022 LA FONTAINE AVENUE	10457	2	Bronx	East Tremont	New York	40.84794708	-73.89338226
