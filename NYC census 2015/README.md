@@ -65,7 +65,8 @@ In the **Metadata Pane**:
 
 #### After change:
 
-<img src="https://github.com/user-attachments/assets/c0de3170-9936-4167-85b0-6a5cc7d0d5dd" width=600 >
+<img src="https://github.com/user-attachments/assets/c0de3170-9936-4167-85b0-6a5cc7d0d5dd" width=300>
 
+<img src="https://github.com/user-attachments/assets/6245678f-eff6-4c85-902a-246a30b0ef69" width=600>
 
 
