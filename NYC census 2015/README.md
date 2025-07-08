@@ -159,4 +159,93 @@ After dropping, Tableau may show an **error**:
 > 🌳 Enjoy your analysis with enhanced tree species information!
 
 
+#### Sums, Counts, and Aggregates
+
+# Understanding Aggregates in Tableau with Tree Census Data
+
+## Common Aggregates
+
+| Aggregate | Description                          | Example                          |
+|-----------|------------------------------------|---------------------------------|
+| `SUM()`   | Adds all values in a field          | `SUM(Trunk Diameter) = 7,712,983 inches`  |
+| `AVG()`   | Calculates the average (mean)       | `AVG(Trunk Diameter) = 11.28 inches`      |
+| `MEDIAN()`| Finds the median (middle value)     | `MEDIAN(Trunk Diameter) = 9.0 inches`     |
+| `COUNT()` | Counts number of items in a field   | `COUNT(Trunk Diameter) = 683,788 trees`   |
+| `COUNTD()`| Counts distinct/unique items        | `COUNTD(Trunk Diameter) = 146 unique measurements` |
+
+---
+
+## Which Zip Code Has the Biggest Tree Trunks?
+
+### Step 1: Sum of Trunk Diameters by Zipcode
+
+- Drag **Zipcode** to Rows shelf.
+- Drag **Trunk Diameter** to Columns shelf (default aggregation is SUM).
+
+**Note:**  
+- This shows the sum of all tree trunk diameters by Zipcode.
+- Larger sums often reflect more trees, not necessarily bigger trunks.
+
+---
+
+### Step 2: Average Trunk Diameter by Zipcode
+
+- Change aggregation of **Trunk Diameter** pill from `SUM()` to `AVG()`:
+  - Hover over the pill → dropdown arrow → **Measure** → **Average**.
+  
+This shows the **average trunk diameter**, giving a better measure of which zip code has bigger trunks on average.
+
+---
+
+### Step 3: Count of Trees by Zipcode
+
+- Drag **Tree ID** to Columns shelf.
+- Change its aggregation to **COUNTD()** (Count Distinct):
+  - Click dropdown on Tree ID pill → **Measure** → **Count Distinct**.
+
+This counts distinct trees per zip code, helping verify if sums correspond to tree counts.
+
+---
+
+## Example Chart Setup in Tableau
+
+1. **Open Tableau** and connect to `tree-census-NYC_2015.csv`.
+2. Open a new workbook.
+3. Drag **Trunk Diameter** to Rows shelf.
+4. Drag **Boroname** (borough names) to Columns shelf.
+5. Click the **Swap Rows and Columns** button (curved double-arrow icon).
+6. Drag a copy of **Boroname** to the **Color** shelf (hold CTRL or Command while dragging).
+
+### Adjust Aggregation
+
+- The default aggregation is `SUM(Trunk Diameter)`.
+- Change it to `AVG(Trunk Diameter)` by clicking the pill dropdown → **Measure** → **Average**.
+- Drag the **AVG(Trunk Diameter)** pill to the **Label** shelf (hold CTRL/Command to copy).
+- Sort the **Boroname** field in **Rows**:
+  - Click dropdown on Boroname → **Sort**.
+  - Sort by **Field** → Aggregation: **Average** → Order: **Descending**.
+
+---
+
+## Observations from the Borough Data
+
+- Queens has the highest average trunk diameter (~12.6 inches).
+- Queens also has the highest sum of trunk diameters but by a wider margin.
+- To check tree counts by borough:
+  - Remove **Trunk Diameter** from Columns and Label shelves.
+  - Drag **Tree ID** to Columns.
+  - Change aggregation of Tree ID to **Count Distinct** (`COUNTD`).
+  - Optionally, drag **COUNTD(Tree ID)** to Label shelf.
+
+---
+
+## Percent of Total Trees by Borough
+
+- Click dropdown on **COUNTD(Tree ID)** pill → **Quick Table Calculation** → **Percent of Total**.
+- Remove and re-add the pill to Label shelf to update labels accordingly.
+
+---
+
+
+---
 
