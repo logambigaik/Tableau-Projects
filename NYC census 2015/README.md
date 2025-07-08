@@ -65,8 +65,98 @@ In the **Metadata Pane**:
 
 #### After change:
 
-<img src="https://github.com/user-attachments/assets/c0de3170-9936-4167-85b0-6a5cc7d0d5dd" width=300>
+<img src="https://github.com/user-attachments/assets/c0de3170-9936-4167-85b0-6a5cc7d0d5dd" width=400>
 <br>
 <img src="https://github.com/user-attachments/assets/eec23d85-5a25-45b8-91ab-e11746de1864" width=600>
+
+#### Joins, Unions, and Relationships
+• Let’s say we wanted to be able to show whether trees are native species or not. If we just so happen to have a dataset with each tree’s Latin name and its native species status, we can do just that! All we have to do in Tableau is ensure that the two tables form a Relationship based on their shared column.
+
+<img src="https://github.com/user-attachments/assets/8cb9aef9-8b31-49ae-a392-63980d84a362" width=440>
+
+
+# Joining Datasets in Tableau Public
+
+## Step 1: Open the Data Source Tab
+
+- Make sure the **Data Source** tab (bottom-left of your screen) is selected.
+  
+> ✅ There are four buttons. From left to right:  
+> - **Data Source** (selected)  
+> - **Sheet1**  
+> - Three icon buttons
+<img src="https://github.com/user-attachments/assets/b6d6fb99-6056-479b-aeb1-3fcc80b893c9" width=400> <br>
+<img src="https://github.com/user-attachments/assets/eb0bcd7f-9ebf-4653-ba48-85433ec3a01c" width=400>
+
+---
+
+## Step 2: View Your Data Connections
+
+- The **tree-census-NYC_2015.csv** file should already be loaded.
+- On the left pane, you’ll see a list of files from the same **datasets** folder.
+
+### Look for:
+- **Connections** → Shows the current CSV connected (e.g. `tree-census-NYC_2015`)
+- **Files** → A list of available files, such as:
+  - `FFA-wildlife-strikes.csv`
+  - `income-NYC_2015.csv`
+  - `passenger-counts_2014.csv`
+  - _and more_
+
+---
+
+## Step 3: Add a New File to the Relationship
+
+1. Find **tree_species_nyc.csv** in the list of files.
+2. **Drag and drop** it next to the `tree-census-NYC_2015.csv` file on the **Relationships Panel**.
+
+> 🧠 You will see an orange "noodle" indicating a potential relationship between the files.
+
+<img src="https://github.com/user-attachments/assets/389b421b-f57a-44c7-9b20-6db908624717" width=400>
+
+
+---
+
+## Step 4: Resolve the Field Matching Error
+
+After dropping, Tableau may show an **error**:
+
+- You'll see two boxes connected by a red **dashed line**.
+- A red triangle with an **exclamation mark** appears between them.
+
+> 🔺 This means Tableau doesn’t know how to match fields between the datasets — they don’t share a column with the same name.
+
+---
+
+## Step 5: Define the Relationship Manually
+
+1. Go to the **Select a field** section (bottom-left of your Tableau window).
+2. You’ll see three sections:
+   - **Left file** → `tree-census-NYC_2015.csv`
+   - **Operator** → default is `=`
+   - **Right file** → `tree_species_nyc.csv`
+
+3. In the **left drop-down**, choose:  
+   ➤ `Spc Latin`
+
+4. In the **right drop-down**, choose:  
+   ➤ `Scientific name`
+
+> ✅ Once selected, the error disappears, and the red dashed line turns into a solid **orange line**.
+
+<img src="https://github.com/user-attachments/assets/0ad85514-c138-4e30-b51e-9debc0ebe7d3" width=400>
+
+
+---
+
+## Success!
+
+- You've successfully joined both datasets based on matching species fields!
+- You can now explore **combined data** from:
+  - `tree-census-NYC_2015.csv`
+  - `tree_species_nyc.csv`
+
+> 🌳 Enjoy your analysis with enhanced tree species information!
+
 
 
