@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NYC Tree Census Dashboard</title>
+  <title>Full-Page Tableau Dashboard</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
     }
+
     #vizContainer {
       width: 100%;
-      height: 100vh; /* Full browser height */
+      height: 100vh;
     }
+
     .tableauViz {
       width: 100%;
       height: 100%;
@@ -21,24 +22,37 @@
   </style>
 </head>
 <body>
-  <div class='tableauPlaceholder' id='vizContainer'>
-    <object class='tableauViz'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='site_root' value='' />
-      <param name='name' value='NYC_tree_census_data_2015/Dashboard1' />
-      <param name='tabs' value='yes' />
-      <param name='toolbar' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='static_image' value='https://public.tableau.com/static/images/NY/NYC_tree_census_data_2015/Dashboard1/1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-GB' />
+  <div class="tableauPlaceholder" id="vizContainer">
+    <noscript>
+      <a href="#"><img alt=" " src="https://public.tableau.com/static/images/NY/NYC_tree_census_data_2015/Dashboard1/1.png" style="border: none" /></a>
+    </noscript>
+    <object class="tableauViz" id="tableauViz" style="display:none;">
+      <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+      <param name="embed_code_version" value="3" />
+      <param name="site_root" value="" />
+      <param name="name" value="NYC_tree_census_data_2015/Dashboard1" />
+      <param name="tabs" value="yes" />
+      <param name="toolbar" value="yes" />
+      <param name="display_static_image" value="yes" />
+      <param name="static_image" value="https://public.tableau.com/static/images/NY/NYC_tree_census_data_2015/Dashboard1/1.png" />
+      <param name="animate_transition" value="yes" />
+      <param name="display_spinner" value="yes" />
+      <param name="display_overlay" value="yes" />
+      <param name="display_count" value="yes" />
+      <param name="language" value="en-GB" />
     </object>
   </div>
 
-  <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+  <script>
+    // Force full screen sizing after Tableau script loads
+    window.onload = function () {
+      var container = document.getElementById('vizContainer');
+      var viz = container.getElementsByClassName('tableauViz')[0];
+      viz.style.display = 'block';
+      viz.style.width = '100%';
+      viz.style.height = window.innerHeight + 'px';
+    };
+  </script>
 </body>
 </html>
