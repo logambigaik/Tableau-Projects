@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>NYC Tree Census Dashboard</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #vizContainer {
+      width: 100%;
+      height: 100vh; /* Full browser height */
+    }
+    .tableauViz {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-  <div class='tableauPlaceholder' id='vizContainer' style='width: 1980px; height: 1200px;'>
-    <object class='tableauViz' style='display:none;'>
+  <div class='tableauPlaceholder' id='vizContainer'>
+    <object class='tableauViz'>
       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
       <param name='embed_code_version' value='3' />
       <param name='site_root' value='' />
