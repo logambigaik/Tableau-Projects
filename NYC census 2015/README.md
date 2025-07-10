@@ -26,16 +26,6 @@ This project visualizes the **NYC Tree Census 2015** dataset using Tableau. The 
 
 ---
 
-## 🚀 How to Run Locally
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/logambigaik/Tableau-Projects.git
-   ```
-2. Open `index.html` in your browser
-
----
-
 ## 🧩 Dashboard Panel Breakdown
 
 ### 1. **Total Tree Count by Borough**
