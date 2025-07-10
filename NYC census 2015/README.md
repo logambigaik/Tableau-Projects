@@ -3,7 +3,7 @@
 This project visualizes the **NYC Tree Census 2015** dataset using Tableau. The goal is to explore the city's urban forestry across boroughs, species, health conditions, and more — presented through an interactive dashboard.
 
 🔗 **Live Dashboard:**  
-👉 [View it on GitHub Pages](https://logambigaik.github.io/Tableau-Projects/)
+👉 [View it on GitHub Pages](https://public.tableau.com/views/NYC_tree_census_data_2015/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -75,6 +75,7 @@ This project visualizes the **NYC Tree Census 2015** dataset using Tableau. The 
 
 ## 📸 Preview
 
-![Dashboard Screenshot](https://public.tableau.com/static/images/NY/NYC_tree_census_data_2015/Dashboard1/1.png)
+![Dashboard Screenshot](<img width="3020" height="1860" alt="image" src="https://github.com/user-attachments/assets/6b9fc3b9-47f2-440f-b213-c89d31d9b896" />
+)
 
 ---
