@@ -19,12 +19,6 @@ This project presents an **HR Analytics Dashboard** built using Tableau. It anal
 
 ---
 
-## 📂 Files Included
-
-- `index.html` – Embeds the Tableau dashboard for full-screen display
-- `README.md` – Project description and panel breakdown
-
----
 
 ## 🧩 Dashboard Panel Breakdown
 
