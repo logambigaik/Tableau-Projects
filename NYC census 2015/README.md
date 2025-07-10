@@ -19,13 +19,6 @@ This project visualizes the **NYC Tree Census 2015** dataset using Tableau. The 
 
 ---
 
-## 📂 Files Included
-
-- `index.html` – Embeds the published Tableau dashboard using responsive layout
-- `README.md` – Project overview and instructions
-
----
-
 ## 🧩 Dashboard Panel Breakdown
 
 ### 1. **Total Tree Count by Borough**
@@ -65,6 +58,6 @@ This project visualizes the **NYC Tree Census 2015** dataset using Tableau. The 
 
 ## 📸 Preview
 
-![Dashboard Screenshot](https://github.com/user-attachments/assets/6b9fc3b9-47f2-440f-b213-c89d31d9b896" />)
+![Dashboard Screenshot](https://github.com/user-attachments/assets/6b9fc3b9-47f2-440f-b213-c89d31d9b896")
 
 ---
