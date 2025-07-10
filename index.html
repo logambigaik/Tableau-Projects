@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Full-Page Tableau Dashboard</title>
+  <title>NYC Tree Census Dashboard</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      overflow: hidden;
     }
 
     #vizContainer {
-      width: 100%;
+      width: 100vw;
       height: 100vh;
     }
 
@@ -24,9 +25,12 @@
 <body>
   <div class="tableauPlaceholder" id="vizContainer">
     <noscript>
-      <a href="#"><img alt=" " src="https://public.tableau.com/static/images/NY/NYC_tree_census_data_2015/Dashboard1/1.png" style="border: none" /></a>
+      <a href="#"><img alt="Dashboard Image" 
+        src="https://public.tableau.com/static/images/NY/NYC_tree_census_data_2015/Dashboard1/1.png" 
+        style="border: none" />
+      </a>
     </noscript>
-    <object class="tableauViz" id="tableauViz" style="display:none;">
+    <object class="tableauViz">
       <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
       <param name="embed_code_version" value="3" />
       <param name="site_root" value="" />
@@ -44,15 +48,5 @@
   </div>
 
   <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-  <script>
-    // Force full screen sizing after Tableau script loads
-    window.onload = function () {
-      var container = document.getElementById('vizContainer');
-      var viz = container.getElementsByClassName('tableauViz')[0];
-      viz.style.display = 'block';
-      viz.style.width = '100%';
-      viz.style.height = window.innerHeight + 'px';
-    };
-  </script>
 </body>
 </html>
