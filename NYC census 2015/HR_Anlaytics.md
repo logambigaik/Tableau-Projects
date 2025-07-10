@@ -59,5 +59,4 @@ This project presents an **HR Analytics Dashboard** built using Tableau. It anal
 
 ## 📸 Preview
 
-![Dashboard Screenshot](<img width="2972" height="1686" alt="image" src="https://github.com/user-attachments/assets/38d3726c-3dcc-447d-975a-fe5b32f9ab51" />
-)
+![Dashboard Screenshot](https://github.com/user-attachments/assets/38d3726c-3dcc-447d-975a-fe5b32f9ab51)
