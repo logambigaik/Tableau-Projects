@@ -19,7 +19,6 @@ This project presents an **HR Analytics Dashboard** built using Tableau. It anal
 
 ---
 
-
 ## 🧩 Dashboard Panel Breakdown
 
 ### 1. **Attrition Overview**
@@ -60,4 +59,5 @@ This project presents an **HR Analytics Dashboard** built using Tableau. It anal
 
 ## 📸 Preview
 
-![Dashboard Screenshot](https://github.com/user-attachments/assets/6b9fc3b9-47f2-440f-b213-c89d31d9b896)
+![Dashboard Screenshot](<img width="2972" height="1686" alt="image" src="https://github.com/user-attachments/assets/38d3726c-3dcc-447d-975a-fe5b32f9ab51" />
+)
